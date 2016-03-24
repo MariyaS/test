@@ -1,6 +1,8 @@
 """ For practice of basic physics problems. """
 
 from math import log, sqrt
+# for conversion from polar to cartesian coordinates
+from math import sin, cos, pi
 
 """ Example 1. """
 def drop_from_tower_n1():
@@ -35,6 +37,20 @@ def convert_ft_to_meters(feet):
 def position_of_accelerating_body(a, v0, t, p0):
     return (0.5)*a*(t**2) + v0*t + p0
 
+""" Convert polar coordinates to cartesian coordinates """
+def convert_polar_to_cartesian():
+    r = float(input("Enter r: "))
+    degrees = float(input("Enter theta in degrees: "))
+    
+    # Angle in radians
+    theta = degrees * pi / 180
+    
+    # Cartesian coordinates equivalent to the polar coordinates
+    x = r * cos(theta)
+    y = r * sin(theta)
+    
+    print(" x = ", x, " y = ", y)
+
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
     drop_from_tower_n1()
@@ -53,5 +69,8 @@ def test_run():
     print "The position in meters of a body accelerating at 2m/s^2, intial velocity 2m/s, time 2 s, initial position 0 meters: "
     print position_of_accelerating_body(2, 2, 2, 0)
 
+    print "Conversion from polar coordinates (r, theta) to cartesian coordinates (x, y):"
+    convert_polar_to_cartesian()
+    
 if __name__ == '__main__':
     test_run()
