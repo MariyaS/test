@@ -33,6 +33,11 @@ def convert_ft_to_meters(feet):
     # 1 inch = 2.54 cm = 0.0254m
     return feet*12*0.0254
 
+""" Convert meters to feet"""
+def convert_meters_to_feet(meters):
+    # 1 meter = 3.2808 feet
+    return meters*3.2808
+
 """ Position of accelerating body. """
 def position_of_accelerating_body(a, v0, t, p0):
     return (0.5)*a*(t**2) + v0*t + p0
@@ -62,6 +67,11 @@ def test_run():
     feet = 10
     print "10 feet in meters: "
     print convert_ft_to_meters(feet)
+
+    """ Conversion from meters to feet """
+    meters = 10
+    print "10 meters in feet: "
+    print convert_meters_to_feet(meters)
 
     """ Position of a body given acceleration (a), initial velocity (v0), time (t), initial position (p0) """
     # Formula in meters and seconds: p(t) = (1/2)at^2 + v0(t) + p0 
