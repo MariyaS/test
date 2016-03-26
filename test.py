@@ -86,8 +86,8 @@ def test_run():
     print "Conversion from polar coordinates (r, theta) to cartesian coordinates (x, y):"
     convert_polar_to_cartesian()
     
-    print "Calculate volume of a lake 200m deep, 1 km wide, 100 km long: "
-    cubic_volume(200, 1000, 100000)
+    print "Calculate volume (m^3) of a lake 200m deep, 1 km wide, 100 km long: "
+    print cubic_volume(200, 1000, 100000)
     
 if __name__ == '__main__':
     test_run()
