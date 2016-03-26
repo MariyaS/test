@@ -56,6 +56,10 @@ def convert_polar_to_cartesian():
     
     print(" x = ", x, " y = ", y)
 
+""" Cubic volume in meters^3 """
+def cubic_volume(d, w, l):
+    return d*w*l
+
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
     drop_from_tower_n1()
@@ -81,6 +85,9 @@ def test_run():
 
     print "Conversion from polar coordinates (r, theta) to cartesian coordinates (x, y):"
     convert_polar_to_cartesian()
+    
+    print "Calculate volume of a lake 200m deep, 1 km wide, 100 km long: "
+    cubic_volume(200, 1000, 100000)
     
 if __name__ == '__main__':
     test_run()
