@@ -59,7 +59,11 @@ def convert_polar_to_cartesian():
 """ Cubic volume in meters^3 """
 def cubic_volume(d, w, l):
     return d*w*l
-
+    
+""" Sphere volume in meters^3 """
+def sphere_volume(r):
+    return (4/3)*pi*r**3
+    
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
     drop_from_tower_n1()
@@ -88,6 +92,9 @@ def test_run():
     
     print "Calculate volume (m^3) of a lake 200m deep, 1 km wide, 100 km long: "
     print cubic_volume(200, 1000, 100000)
+    
+    print "Calculate volume of sphere with radius 2m: "
+    print sphere_volume(2)
     
 if __name__ == '__main__':
     test_run()
