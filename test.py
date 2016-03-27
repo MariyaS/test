@@ -62,7 +62,7 @@ def cubic_volume(d, w, l):
     
 """ Sphere volume in meters^3 """
 def sphere_volume(r):
-    return (4/3)*pi*r**3
+    return (4.0/3.0)*pi*r**3
     
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
