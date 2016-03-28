@@ -64,6 +64,10 @@ def cubic_volume(d, w, l):
 def sphere_volume(r):
     return (4.0/3.0)*pi*r**3
     
+""" Circumference of circle """
+def circle_circumference(r):
+    return (2.0)*pi*r
+
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
     drop_from_tower_n1()
@@ -95,6 +99,9 @@ def test_run():
     
     print "Calculate volume of sphere with radius 2m: "
     print sphere_volume(2)
+    
+    print "Circumference of a circle with radius 2m: "
+    print circle_circumference(2)
     
 if __name__ == '__main__':
     test_run()
