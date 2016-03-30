@@ -71,6 +71,11 @@ def circle_circumference(r):
 """ Surface area of circle with radius 2m: """
 def circle_surface(r):
     return pi*(r**2)
+    
+""" Surface area of sphere with radius 2m: """
+def sphere_surface(r):
+    return 4.0*pi*(r**2)
+
 
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
@@ -109,6 +114,9 @@ def test_run():
     
     print "Surface area of circle with radius 2m: "
     print circle_surface(2)
+    
+    print "Surface area of sphere with radius 2m: "
+    print sphere_surface(2)
     
 if __name__ == '__main__':
     test_run()
