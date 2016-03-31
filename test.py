@@ -57,11 +57,11 @@ def convert_polar_to_cartesian():
     print(" x = ", x, " y = ", y)
 
 """ Cubic volume in meters^3 """
-def cubic_volume(d, w, l):
+def volume_cubic(d, w, l):
     return d*w*l
     
 """ Sphere volume in meters^3 """
-def sphere_volume(r):
+def volume_sphere(r):
     return (4.0/3.0)*pi*r**3
     
 """ Circumference of circle """
@@ -69,11 +69,11 @@ def circle_circumference(r):
     return (2.0)*pi*r
 
 """ Surface area of circle with radius 2m: """
-def circle_surface(r):
+def surface_circle(r):
     return pi*(r**2)
     
 """ Surface area of sphere with radius 2m: """
-def sphere_surface(r):
+def surface_sphere(r):
     return 4.0*pi*(r**2)
 
 
@@ -104,19 +104,19 @@ def test_run():
     convert_polar_to_cartesian()
     
     print "Calculate volume (m^3) of a lake 200m deep, 1 km wide, 100 km long: "
-    print cubic_volume(200, 1000, 100000)
+    print volume_cubic(200, 1000, 100000)
     
     print "Calculate volume of sphere with radius 2m: "
-    print sphere_volume(2)
+    print volume_sphere(2)
     
     print "Circumference of a circle with radius 2m: "
     print circle_circumference(2)
     
     print "Surface area of circle with radius 2m: "
-    print circle_surface(2)
+    print surface_circle(2)
     
     print "Surface area of sphere with radius 2m: "
-    print sphere_surface(2)
+    print surface_sphere(2)
     
 if __name__ == '__main__':
     test_run()
