@@ -80,6 +80,19 @@ def surface_sphere(r):
 def surface_cube(r):
     return 6.0*(r**2)
 
+""" Given a frequency, figure out what it is:"""
+def frequency(f):
+    if f < 540000:
+        return 'Long radio wave'
+    elif f < 1600000:
+        return 'AM Radio'
+    elif f < 88100000:
+        return 'Short radio wave'
+    elif f < 108100000:
+        return 'FM Radio'
+    else:
+        return 'WIP'
+
 def test_run():
     """ A ball dropped from a tower. Give height and seconds. """
     drop_from_tower_n1()
@@ -123,6 +136,9 @@ def test_run():
 
     print "Surface area of cube with side 2m: "
     print surface_cube(2)
+
+    print "Given frequency (Hz), this is: "
+    print frequency(100)
     
 if __name__ == '__main__':
     test_run()
