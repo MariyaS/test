@@ -90,6 +90,8 @@ def frequency(f):
         return 'Short radio wave'
     elif f < 108100000:
         return 'FM Radio'
+    elif f < 300000000000:
+        return 'Microwaves'
     else:
         return 'WIP'
 
