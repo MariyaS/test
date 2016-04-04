@@ -79,6 +79,10 @@ def surface_sphere(r):
 """ Surface area of cube with side 2m: """
 def surface_cube(r):
     return 6.0*(r**2)
+    
+""" Area of parallelogram: """
+def area_parallelogram(b, h):
+    return b*h
 
 """ Given a frequency, figure out what it is:"""
 def frequency(f):
@@ -141,6 +145,9 @@ def test_run():
     print "Surface area of cube with side 2m: "
     print surface_cube(2)
 
+    print "Area of parallelogram: "
+    print area_parallelogram(4, 5)
+    
     print "Given frequency (Hz), this is: "
     print frequency(100)
     
