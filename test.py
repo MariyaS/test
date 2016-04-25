@@ -37,6 +37,16 @@ def convert_ft_to_meters(feet):
 def convert_meters_to_feet(meters):
     # 1 meter = 3.2808 feet
     return meters*3.2808
+    
+""" Convert km/hr to meters/second"""
+#def convert_km-hr_to_m-s(km-hr):
+#    # km/hr / 3.6 = m/s
+#    return km-hr/3.6
+
+""" Convert meters/second to km/hr"""
+#def convert_m-s_to_km-hr(m-s):
+#    # m/s * 3.6 = km/hr
+#    return m-s*3.6
 
 """ Position of accelerating body. """
 def position_of_accelerating_body(a, v0, t, p0):
