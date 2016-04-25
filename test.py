@@ -4,6 +4,13 @@ from math import log, sqrt
 # for conversion from polar to cartesian coordinates
 from math import sin, cos, pi
 
+""" Constants """
+# Speeds in m/s
+# Speed of sound in air at 18 degrees Celcius (64 degrees F):
+# sound_in_air_ms = 341       # (About 1120 ft/s)
+# Speed of sound in salt water at 18 degrees C (64 degrees F) at low depth:
+# sound_in_ocean_ms = 1524    # (About 5000 ft/s)
+
 """ Example 1. """
 def drop_from_tower_n1():
     h = float(input("Enter height of tower (meters): "))
